@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 
-Hi, I'm Tian Xia, an undergraduate student at the University of Michigan, triple majoring in Honors Math, Honors CS, and DS. I am also a research intern at SafoLab and SLED Lab. I am deeply passionate about modeling concepts in mathematical language and examining them from different perspectives. My main excitement lies in machine learning and its applications. Outside of research, I’m an avid gamer, enjoy long walks, and love flying to different cities.
+Hi, I'm Tian Xia, an undergraduate student at the University of Michigan, triple majoring in Honors Math, Honors CS, and DS. I am also a research intern at [SafoLab](https://xiaocw11.github.io/) and [SLED lab](https://sled.eecs.umich.edu/). I am deeply passionate about modeling concepts in mathematical language and examining them from different perspectives. My main excitement lies in machine learning and its applications. Outside of research, I’m an avid gamer, enjoy long walks, and love flying to different cities.
 
 
 # Research
