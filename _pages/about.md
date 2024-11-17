@@ -27,6 +27,17 @@ My research interests lie in ...
 
 # Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div></div></div>
+<div class='paper-box-text' markdown="1">
+  
+SAB3R: Semantic-Augmented Backbone in 3D Reconstruction
+
+Xuweiyi Chen\*, **Tian Xia**\*, Sihan XU, Jianing Yang, Joyce Chai, Zezhou Cheng
+
+Coming soon.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">TMLR</div><img src='images/UniCtrl.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -37,8 +48,6 @@ My research interests lie in ...
 \[[**Project**](https://unified-attention-control.github.io/)\]\[[**Arxiv**](https://arxiv.org/abs/2403.02332)\]\[[**Code**](https://github.com/XuweiyiChen/UniCtrl)\]
 </div>
 </div>
-
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
 # Honors and Awards
 - *2024* Evelyn O. Bychinsky Awards
