@@ -18,12 +18,20 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 
-Hi This is Tian Xia
+Hi, I'm Tian Xia, an undergraduate student at the University of Michigan, triple majoring in Honors Math, Honors Computer Science, and Data Science. I am also a research intern at SafoLab and SLED Lab. I am deeply passionate about modeling concepts in mathematical language and examining them from different perspectives. My main excitement lies in machine learning and its applications. Outside of research, I’m an avid gamer, enjoy long walks, and love flying to different cities.
 
 
 # Research
 
-My research interests lie in ...
+My research interests focus on *multimodal learning* and *3D intelligence*, emphasizing scalable systems and robust representations. I aim to develop *trustworthy machine learning* systems that integrate diverse data modalities, such as vision, language, and 3D spatial information, to advance understanding, reasoning, and interaction in the 3D physical world.
+
+Over time, my interests have expanded to encompass a broader range of topics, including computer vision, natural language processing, 3D modeling, and robotics. My current focus areas include:
+
+- *3D Understanding*: Encompassing reconstruction, recognition, and interaction.
+- *Generative AI*: Particularly for generating across diverse modalities.
+- *Multimodal Representation Learning*: Integrating vision, language, and 3D spatial information.
+- *AI for Mathematics*: Exploring mathematical reasoning, theory-proving, and formal proof generation.
+
 
 # Publications 
 
@@ -70,3 +78,23 @@ Coming soon.
 # Educations
 - *2022.09 - 2025.06 (now)*, B.S Honors Mathematics, B.S Honors Computer Science and B.S Data Science, University of Michigan, Ann Arbor
 - *2020.09 - 2022.06*, BSc (Hons) Statistics, University of Nottingham, Ningbo China
+
+# Side Projects
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EECS 442 Course Projects</div><img src='images/442.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+  
+[Rethink the Noise Prior of Initialization Gap in Video Diffusion Models](https://github.com/TianX-IA/tianx-ia.github.io/blob/main/docs/EECS_442_Project.pdf)
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EECS 486 Course Projects</div><img src='images/486.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+  
+[What is on People’s Minds?](https://github.com/TianX-IA/tianx-ia.github.io/blob/main/docs/EECS_486_project.pdf)
+
+\[[Poster](https://github.com/TianX-IA/tianx-ia.github.io/blob/main/docs/EECS_486_poster.pdf)\]
+
+</div>
+</div>
