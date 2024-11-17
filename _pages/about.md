@@ -50,11 +50,11 @@ Coming soon.
 </div>
 
 # Honors and Awards
-- *2024* Evelyn O. Bychinsky Awards
-- *2024* James B. Angell Scholar
-- *2023, 2024* M.S. Keeler Department of Mathematics Merit Scholarships
-- *2022, 2023* University Honors
-- *2021* TOP 1 at UoN Hackathon
+- *2024 :* Evelyn O. Bychinsky Awards
+- *2024 :* James B. Angell Scholar
+- *2023, 2024 :* M.S. Keeler Department of Mathematics Merit Scholarships
+- *2022, 2023 :* University Honors
+- *2021 :* TOP 1 at UoN Hackathon
 
 # Educations
 - *2022.09 - 2025.06 (now)*, B.S Honors Mathematics, B.S Honors Computer Science and B.S Data Science, University of Michigan, Ann Arbor
