@@ -27,7 +27,7 @@ My research interests lie in ...
 
 # Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Coming</div></div></div>
 <div class='paper-box-text' markdown="1">
   
 SAB3R: Semantic-Augmented Backbone in 3D Reconstruction
