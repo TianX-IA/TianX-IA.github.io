@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 
-Hi, I'm Tian Xia, an undergraduate student at the University of Michigan, triple majoring in Honors Math, Honors Computer Science, and Data Science. I am also a research intern at SafoLab and SLED Lab. I am deeply passionate about modeling concepts in mathematical language and examining them from different perspectives. My main excitement lies in machine learning and its applications. Outside of research, I’m an avid gamer, enjoy long walks, and love flying to different cities.
+Hi, I'm Tian Xia, an undergraduate student at the University of Michigan, triple majoring in Honors Math, Honors CS, and DS. I am also a research intern at SafoLab and SLED Lab. I am deeply passionate about modeling concepts in mathematical language and examining them from different perspectives. My main excitement lies in machine learning and its applications. Outside of research, I’m an avid gamer, enjoy long walks, and love flying to different cities.
 
 
 # Research
@@ -35,7 +35,7 @@ Over time, my interests have expanded to encompass a broader range of topics, in
 
 # Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Coming</div></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Incoming</div></div></div>
 <div class='paper-box-text' markdown="1">
   
 SAB3R: Semantic-Augmented Backbone in 3D Reconstruction
@@ -46,7 +46,7 @@ Coming soon.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Coming</div></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Incoming</div></div></div>
 <div class='paper-box-text' markdown="1">
   
 Prompt Injection Benchmark for Foundation Model Integrated Systems
