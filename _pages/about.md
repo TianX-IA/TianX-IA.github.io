@@ -38,6 +38,17 @@ Coming soon.
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Coming</div></div></div>
+<div class='paper-box-text' markdown="1">
+  
+Prompt Injection Benchmark for Foundation Model Integrated Systems
+
+Jiongxiao Wang, Peiran Li, Siyuan Ma, Peiran Wang, Xiaogeng Liu, Jiashuo Sun, Yiming Liang, **Tian Xia**, Yu Wang, Weidi Luo, Chaowei Xiao
+
+Coming soon.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">TMLR</div><img src='images/UniCtrl.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
