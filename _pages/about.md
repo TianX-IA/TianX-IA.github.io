@@ -27,7 +27,7 @@ My research interests lie in ...
 
 # Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TMLR</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TMLR</div><img src='images/UniCtrl.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [UniCtrl: Improving the Spatiotemporal Consistency of Text-to-Video Diffusion Models via Training-Free Unified Attention Control](https://openreview.net/pdf?id=x2uFJ79OjK)
