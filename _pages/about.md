@@ -30,7 +30,7 @@ Over time, my interests have expanded to encompass a broader range of topics, in
 - *3D Intelligence*: Encompassing 3D reconstruction, recognition, and interaction.
 - *Generative AI*: Particularly for generating across diverse modalities.
 - *Multimodal Representation Learning*: Integrating vision, language, and 3D spatial information.
-- *AI for Mathematics*: Exploring mathematical reasoning and representation across modalities, including natural language proofs and formal mathematical programming languages
+- *AI for Mathematics*: Exploring mathematical reasoning and representation across modalities, spanning natural language and formal proofs 
 
 
 # Publications 
