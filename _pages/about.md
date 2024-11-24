@@ -35,7 +35,7 @@ Over time, my interests have expanded to encompass a broader range of topics, in
 
 # Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Incoming</div></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div></div><img src='images/Sab3r.png' alt="sym" width="100%"></div>div</div>
 <div class='paper-box-text' markdown="1">
   
 SAB3R: Semantic-Augmented Backbone in 3D Reconstruction
@@ -46,7 +46,7 @@ Coming soon.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Incoming</div></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div></div></div>
 <div class='paper-box-text' markdown="1">
   
 Prompt Injection Benchmark for Foundation Model Integrated Systems
