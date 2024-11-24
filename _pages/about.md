@@ -79,6 +79,9 @@ Coming soon.
 - *2022.09 - 2025.06 (now)*, B.S Honors Mathematics, B.S Honors Computer Science and B.S Data Science, University of Michigan, Ann Arbor
 - *2020.09 - 2022.06*, BSc (Hons) Statistics, University of Nottingham, Ningbo China
 
+# Talks
+- *2024.10*, Open Vocabulary 3D Querying with Unposed Images @ SLED.
+  
 # Side Projects
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">EECS 442 Course Projects</div><img src='images/442.png' alt="sym" width="100%"></div></div>
@@ -98,3 +101,12 @@ Coming soon.
 
 </div>
 </div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TransferWiki</div><img src='images/transferwiki.com_.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Transferwiki](https://transferwiki.com/) - Collabator
+
+TransferWiki is a platform created to assist students from mainland China who are planning to transfer to universities abroad, particularly in the United States, Canada, and the United Kingdom. This platform addresses the challenges and information asymmetry faced by students during the transfer process.
+  
+</div>
+</div> 
