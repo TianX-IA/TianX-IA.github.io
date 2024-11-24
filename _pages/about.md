@@ -84,7 +84,7 @@ Coming soon.
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">EECS 442 Course Projects</div><img src='images/442.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
-[Rethink the Noise Prior of Initialization Gap in Video Diffusion Models](https://github.com/TianX-IA/tianx-ia.github.io/blob/main/docs/EECS_442_Project.pdf)
+[Rethink the Noise Prior of Initialization Gap in Video Diffusion Models](https://docs.google.com/viewer?url=https://github.com/TianX-IA/tianx-ia.github.io/blob/main/docs/EECS_442_Project.pdf)
 
 </div>
 </div>
@@ -92,9 +92,9 @@ Coming soon.
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">EECS 486 Course Projects</div><img src='images/486.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
-[What is on People’s Minds?](https://github.com/TianX-IA/tianx-ia.github.io/blob/main/docs/EECS_486_project.pdf)
+[What is on People’s Minds?](https://docs.google.com/viewer?url=https://github.com/TianX-IA/tianx-ia.github.io/blob/main/docs/EECS_486_project.pdf)
 
-\[[Poster](https://github.com/TianX-IA/tianx-ia.github.io/blob/main/docs/EECS_486_poster.pdf)\]
+\[[Poster](https://docs.google.com/viewer?url=https://github.com/TianX-IA/tianx-ia.github.io/blob/main/docs/EECS_486_poster.pdf)\]
 
 </div>
 </div>
