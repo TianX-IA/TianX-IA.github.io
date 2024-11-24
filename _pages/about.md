@@ -84,7 +84,7 @@ Coming soon.
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">EECS 442 Course Projects</div><img src='images/442.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
-[Rethink the Noise Prior of Initialization Gap in Video Diffusion Models](https://github.com/TianX-IA/tianx-ia.github.io/blob/main/EECS_442_project.pdf)
+[Rethink the Noise Prior of Initialization Gap in Video Diffusion Models](EECS_442_project.pdf)
 
 </div>
 </div>
