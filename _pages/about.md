@@ -38,7 +38,7 @@ Over time, my interests have expanded to encompass a broader range of topics, in
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/Sab3r.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
-[Semantic_Augmented_3D_Foundation_Models.pdf](SAB3R: Semantic-Augmented Backbone in 3D Reconstruction)
+[https://uva-computer-vision-lab.github.io/sab3r/](SAB3R: Semantic-Augmented Backbone in 3D Reconstruction)
 
 Xuweiyi Chen\*, **Tian Xia**\*, Sihan XU, Jianing Yang, Joyce Chai, Zezhou Cheng
 
