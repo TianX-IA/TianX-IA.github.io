@@ -27,8 +27,8 @@ My research interests focus on *multimodal learning*, *3D intelligence* and *gen
 
 Over time, my interests have expanded to encompass a broader range of topics, including computer vision, natural language processing, 3D modeling, and robotics. My current focus areas include:
 
-- *3D Intelligence*: Encompassing 3D reconstruction, recognition, and interaction.
-- *Generative AI*: Particularly for generating across diverse modalities.
+- *3D Intelligence*: Encompassing 3D reconstruction, recognition, generation and interaction.
+- *Generative AI*: Particularly for generating across diverse modalities and high-dimensional(3D, 4D) creation.
 - *Multimodal Representation Learning*: Integrating vision, language, and 3D spatial information.
 - *AI for Mathematics*: Exploring symbolic reasoning and representation, spanning natural language and formal proofs 
 
