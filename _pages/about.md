@@ -23,7 +23,7 @@ Hi, I'm Tian Xia, an undergraduate student at the University of Michigan, triple
 
 # Research
 
-My research interests focus on *multimodal learning*, *3D intelligence* and *generative AI*, emphasizing scalable systems and cross-modal representations. I aim to develop *trustworthy machine learning* systems that integrate diverse data modalities, such as vision, language, and 3D spatial information, to advance understanding, interacting, and generation in the 3D physical world.
+My research interests focus on *3D intelligence*, *generative AI*, and *embodied agents*, emphasizing scalable systems and cross-modal representations. I aim to develop *trustworthy machine learning* systems that integrate diverse data modalities, such as vision, language, and 3D spatial information, to advance understanding, interacting, and generation in the 3D physical world.
 
 Over time, my interests have expanded to encompass a broader range of topics, including computer vision, natural language processing, 3D modeling, and robotics. My current focus areas include:
 
