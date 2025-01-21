@@ -18,16 +18,16 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 
-Hi, I'm Tian Xia, an undergraduate student at the University of Michigan, triple majoring in Honors Math, Honors CS, and DS. I am also a research intern at [SafoLab](https://xiaocw11.github.io/) and [SLED lab](https://sled.eecs.umich.edu/). I am deeply passionate about modeling concepts in mathematical language and examining them from different perspectives. My main excitement lies in machine learning and its applications. Outside of research, I’m an avid gamer, enjoy long walks, and love flying to different cities.
+Hi, I'm Tian Xia, an undergraduate student at the University of Michigan, triple majoring in Honors Math, Honors CS, and DS. I am also a research intern at [SafoLab](https://xiaocw11.github.io/) and [SLED lab](https://sled.eecs.umich.edu/). I am deeply passionate about modeling concepts in mathematical language and examining them from different perspectives. My main excitement lies in *computer vision* and *machine learning*. Outside of research, I’m an avid gamer, enjoy long walks, and love flying to different cities.
 
 
 # Research
 
-My research interests focus on *3D understanding*, *generative AI*, and *embodied agents*, emphasizing scalable systems and cross-modal representations. I aim to develop machine learning systems that integrate diverse data modalities, such as vision, language, and 3D spatial information, to advance perception of 3D environments, generation of 3D worlds, and interaction in human-like ways.
+I am broadly interested in *computer vision*. My research interests focus on *3D understanding*, *generative AI*, and *embodied agents*, emphasizing scalable systems and cross-modal representations. I aim to develop machine learning systems that integrate diverse data modalities, such as vision, language, and 3D spatial information, to advance perception of 3D environments, generation of 3D worlds, and interaction in human-like ways.
 
 Over time, my interests have expanded to encompass a broader range of topics, including computer vision, natural language processing, and 3D modeling. My current focus areas include:
 
-- *3D understanding*: Encompassing 3D reconstruction, recognition, and generation.
+- *Vision-centric 3D understanding*: Encompassing 3D reconstruction, recognition, and generation.
 - *Generative AI*: Particularly for generating across diverse modalities and high-dimensional(3D, 4D) creation.
 - *Multimodal Representation Learning*: Integrating vision, language, and 3D spatial information.
 
