@@ -109,7 +109,7 @@ TransferWiki is a platform created to assist students from mainland China who ar
 </div>
 </div> 
 
-<div style="width: 100%; max-width: 800px; margin: auto; position: relative;">
+<div style="display: none;">
 <a href="https://clustrmaps.com/site/1c3xy"  title="ClustrMaps"><img src="//www.clustrmaps.com/map_v2.png?d=KGoDhh2MGlq2_aRXVHwc96dxN6LKB_mtZnT3ozSASwQ&cl=ffffff" /></a>
 </div>
 
