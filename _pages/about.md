@@ -33,14 +33,14 @@ Over time, my interests have expanded to encompass a broader range of topics, in
 
 # Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/Sab3r.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">3D-LLM/VLA @ CVPR 2025</div><img src='images/Sab3r.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
 [SAB3R: Semantic-Augmented Backbone in 3D Reconstruction](https://uva-computer-vision-lab.github.io/sab3r/)
 
 Xuweiyi Chen\*, **Tian Xia**\*, Sihan XU, Jianing Yang, Joyce Chai, Zezhou Cheng
 
-\[[**Project**](https://uva-computer-vision-lab.github.io/sab3r/)\]\[[**Preprint**](Semantic_Augmented_3D_Foundation_Models.pdf)\]
+\[[**Project**](https://uva-computer-vision-lab.github.io/sab3r/)\]\[[**Arxiv**](https://www.arxiv.org/abs/2506.02112)\]
 </div>
 </div>
 
