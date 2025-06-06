@@ -60,7 +60,6 @@ Xuweiyi Chen\*, **Tian Xia**\*, Sihan XU, Jianing Yang, Joyce Chai, Zezhou Cheng
 - *2024:* James B. Angell Scholar
 - *2023, 2024:* M.S. Keeler Department of Mathematics Merit Scholarships
 - *2022, 2023:* University Honors
-- *2021:* TOP 1 at UoN Hackathon
 
 # Educations
 - *incoming*, S.M. in Computational Science and Engineering, Harvard University
