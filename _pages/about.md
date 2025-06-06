@@ -17,15 +17,14 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-
-Hi, I'm Tian Xia, an undergraduate student at the University of Michigan, triple majoring in Honors Math, Honors CS, and DS. I am also a research intern at [SafoLab](https://xiaocw11.github.io/) and [SLED lab](https://sled.eecs.umich.edu/). I am deeply passionate about modeling concepts in mathematical language and examining them from different perspectives. My main excitement lies in *computer vision* and *machine learning*. Outside of research, I’m an avid gamer, enjoy long walks, and love flying to different cities.
+Hi, I'm Tian Xia, a recent graduate from the University of Michigan with triple majors in Honors Math, Honors CS, and DS. I am an incoming master's student in CSE at Harvard University. I previously worked as a research intern at [SafoLab](https://xiaocw11.github.io/) and [SLED lab](https://sled.eecs.umich.edu/). I am deeply passionate about modeling concepts in mathematical language and examining them from different perspectives. My main excitement lies in *computer vision* and *machine learning*. Outside of research, I’m an avid gamer, enjoy long walks, and love flying to different cities.
 
 
 # Research
 
-I am broadly interested in *computer vision* and *machine learning*. My research interests focus on *3D understanding*, *generative AI*, and *embodied agents*, emphasizing scalable systems and cross-modal representations. I aim to develop machine learning systems that integrate diverse data modalities, such as vision, language, and 3D spatial information, to advance perception of 3D environments, generation of 3D worlds, and interaction in human-like ways.
+My research interests focus on *3D understanding*, *generative AI*, and *embodied agents*, emphasizing scalable systems and cross-modal representations. I aim to develop machine learning systems that integrate diverse data modalities, such as vision, language, and 3D spatial information, to advance perception of 3D environments, generation of 3D worlds, and interaction in human-like ways.
 
-Over time, my interests have expanded to encompass a broader range of topics, including computer vision, natural language processing, and 3D modeling. My current focus areas include:
+Over time, my interests have expanded to encompass a broader range of topics, including computer vision, 3D modeling, and robotics. My current focus areas include:
 
 - *Vision-centric 3D understanding*: Encompassing 3D reconstruction, recognition, and generation.
 - *Generative AI*: Particularly for generating across diverse modalities and high-dimensional(3D, 4D) creation.
@@ -44,20 +43,6 @@ Xuweiyi Chen\*, **Tian Xia**\*, Sihan XU, Jianing Yang, Joyce Chai, Zezhou Cheng
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div></div></div>
-<div class='paper-box-text' markdown="1">
-  
-Prompt Injection Benchmark for Foundation Model Integrated Systems
-
-Jiongxiao Wang, Peiran Li, Siyuan Ma, Peiran Wang, Xiaogeng Liu, Jiashuo Sun, Yiming Liang, **Tian Xia**, Yu Wang, Weidi Luo, Chaowei Xiao
-
-Coming soon.
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TMLR</div><img src='images/UniCtrl.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
 [UniCtrl: Improving the Spatiotemporal Consistency of Text-to-Video Diffusion Models via Training-Free Unified Attention Control](https://openreview.net/forum?id=x2uFJ79OjK)
 
 **Tian Xia**\*, Xuweiyi Chen\*, Sihan Xu
@@ -67,6 +52,7 @@ Coming soon.
 </div>
 
 # Honors and Awards
+- *2025* Outstanding Achievement in Mathematics Awards 
 - *2024:* Evelyn O. Bychinsky Awards
 - *2024:* James B. Angell Scholar
 - *2023, 2024:* M.S. Keeler Department of Mathematics Merit Scholarships
@@ -74,8 +60,8 @@ Coming soon.
 - *2021:* TOP 1 at UoN Hackathon
 
 # Educations
-- *2022.09 - 2025.06 (now)*, B.S Honors Mathematics, B.S Honors Computer Science and B.S Data Science, University of Michigan, Ann Arbor
-- *2020.09 - 2022.06*, BSc (Hons) Statistics, University of Nottingham, Ningbo China
+- *incoming*, S.M. in Computational Science and Engineering, Harvard University
+- *2022.09 - 2025.05*, B.S. in Honors Mathematics, Honors Computer Science and Data Science, University of Michigan, Ann Arbor
 
 # Talks
 - *2024.10*, Open Vocabulary 3D Querying with Unposed Images @ SLED.
