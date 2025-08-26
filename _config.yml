@@ -23,7 +23,9 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Tian Xia"
   avatar           : "images/avatar.jpg"
-  bio              : "Master's student at Harvard University\nUndergraduate at University of Michigan, Ann Arbor"
+  bio              |
+  Master's student at Harvard University
+  Undergraduate at University of Michigan, Ann Arbor
   location         : "Cambridge, MA"
   employer         :
   pubmed           : 
