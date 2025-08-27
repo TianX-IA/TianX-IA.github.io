@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi, I'm Tian Xia, a master's student in CSE at Harvard University. I recently graduated from the University of Michigan with triple majors in Honors Math, Honors CS, and DS. I previously worked as a research intern at [SafoLab](https://xiaocw11.github.io/) and [SLED lab](https://sled.eecs.umich.edu/). I am deeply passionate about modeling concepts in mathematical language and examining them from different perspectives. My main excitement lies in *computer vision*, *machine learning* and *robotics*. Outside of research, I’m an avid gamer, enjoy long walks, and love flying to different cities.
+Hi, I'm Tian Xia, a master's student in CSE at Harvard University. I recently graduated from the University of Michigan, Ann Arbor with triple majors in Honors Math, Honors CS, and DS. I previously worked as a research intern at [SafoLab](https://xiaocw11.github.io/) and [SLED lab](https://sled.eecs.umich.edu/). I am deeply passionate about modeling concepts in mathematical language and examining them from different perspectives. My main excitement lies in *computer vision*, *machine learning* and *robotics*. Outside of research, I’m an avid gamer, enjoy long walks, and love flying to different cities.
 
 
 # Research
@@ -55,7 +55,7 @@ Xuweiyi Chen\*, **Tian Xia**\*, Sihan XU, Jianing Yang, Joyce Chai, Zezhou Cheng
 </div>
 
 # Honors and Awards
-- *2025* Outstanding Achievement in Mathematics Awards 
+- *2025:* Outstanding Achievement in Mathematics Awards 
 - *2024:* Evelyn O. Bychinsky Awards
 - *2024:* James B. Angell Scholar
 - *2023, 2024:* M.S. Keeler Department of Mathematics Merit Scholarships
