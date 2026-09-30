@@ -22,15 +22,28 @@ Hi, I'm Tian Xia, a master's student in CSE at Harvard University. I recently gr
 
 # Research
 
-My research interests focus on *3D understanding*, *generative AI*, and *embodied agents*, emphasizing scalable systems and cross-modal representations. I aim to develop machine learning systems that integrate diverse data modalities, such as vision, language, and 3D spatial information, to advance perception of 3D environments, generation of 3D worlds, and interaction in human-like ways.
+My research spans *computer vision*, *generative modeling*, and *multimodal learning*. I am interested in how models represent visual and spatial structure, and how we can adapt them to new tasks with useful supervision and feedback. My work includes semantic-aware 3D reconstruction, consistent video generation, and prompt optimization for multimodal clinical tasks.
 
-Over time, my interests have expanded to encompass a broader range of topics, including computer vision, 3D modeling, and robotics. My current focus areas include:
+More recently, I have been studying how optimization objectives and evaluation criteria shape model behavior, from ranking-aware prompt search to reflective learning in LLM agents. My current interests include:
 
-- *Vision-centric 3D understanding*: Encompassing 3D reconstruction, recognition, and generation.
-- *Generative AI*: Particularly for generating across diverse modalities and high-dimensional(3D, 4D) creation.
-- *Multimodal Representation Learning*: Integrating vision, language, and 3D spatial information.
+- *Visual and spatial understanding*: Connecting images, language, and 3D representations for perception and embodied systems.
+- *Generative modeling*: Improving video consistency and studying how synthetic data supports downstream visual learning.
+- *Prompt optimization and evaluation*: Designing feedback and selection objectives that reflect the capabilities we want models and agents to learn.
 
 # Publications 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint 2026</div><img src='images/ranking-pe.png' alt="Ranking-PE overview of multimodal clinical diagnosis and ranking-aware evaluation" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Ranking-PE: Ranking-Aware Prompt Optimization for Multimodal Clinical Diagnosis](https://ranking-pe.github.io/)
+
+**Tian Xia**, Minghao Liu, Yiqing Liang, Laixi Shi, Jiayun Wang
+
+Ranking-aware prompt optimization that aligns prompt search, reflective feedback, and final selection with AUROC for multimodal clinical diagnosis.
+
+\[[**Project**](https://ranking-pe.github.io/)\]\[[**Paper**](https://ranking-pe.github.io/assets/paper.pdf)\]
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">3D-LLM/VLA @ CVPR 2025</div><img src='images/Sab3r.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -68,7 +81,59 @@ Xuweiyi Chen\*, **Tian Xia**\*, Sihan XU, Jianing Yang, Joyce Chai, Zezhou Cheng
 # Talks
 - *2024.10*, Open Vocabulary 3D Querying with Unposed Images @ SLED.
   
-# Side Projects
+<span class='anchor' id='side-projects'></span>
+
+# Course Projects
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CS 1440R / 2440R · 2026</div><img src='images/cs1440-frontier.png' alt="Frontier selection and feedback in reflective prompt evolution" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Frontier Construction Shapes Reflective Prompt Evolution in LLM Negotiation](assets/course-projects/cs1440-report.pdf)
+
+Manasa Bala, Chong Zhao, **Tian Xia**
+
+A study of how Pareto frontier construction shapes prompt selection and reflective feedback, comparing flat, per-instance, and per-axis selection in buyer-seller negotiations.
+
+\[[**Report**](assets/course-projects/cs1440-report.pdf)\]
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AC 209B / CS 1090B · 2026</div><img src='images/artist-authorship.png' alt="Effect of real and synthetic training-data mixing on artist attribution" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Generative Data Augmentation for Artist Authorship Attribution](assets/course-projects/cs1090b-report.pdf)
+
+Yiqiao Huang, Lixuan Wei, Ruyi Yang, **Tian Xia**
+
+SDXL adaptation with LoRA and ControlNet for artist attribution, studying how the balance of real and synthetic training examples affects performance on underperforming classes.
+
+\[[**Report**](assets/course-projects/cs1090b-report.pdf)\]
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CS 2050 · 2026</div><img src='assets/course-projects/cs2050/hero_pattern.png' alt="Pattern produced by the Gray-Scott reaction-diffusion simulation" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Parallel Gray-Scott Reaction-Diffusion](assets/course-projects/cs2050/index.html)
+
+**Tian Xia**
+
+Serial C++, OpenMP, MPI, CUDA, and mpi4py implementations of the same reaction-diffusion system, with correctness checks, scaling experiments, and CPU profiling.
+
+\[[**Report**](assets/course-projects/cs2050/index.html)\]
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AM 205 · 2025</div><img src='images/am205-least-squares.png' alt="Gauss-Newton and Levenberg-Marquardt convergence from different initial parameters" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Nonlinear Least Squares: Gauss-Newton and Levenberg-Marquardt](https://github.com/TianX-IA/AM205Project)
+
+A computational study of damped-oscillation parameter estimation, examining sensitivity to initialization, ill-conditioning, and measurement noise.
+
+\[[**Code**](https://github.com/TianX-IA/AM205Project)\]
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">EECS 442 Course Projects</div><img src='images/442.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -88,9 +153,11 @@ Xuweiyi Chen\*, **Tian Xia**\*, Sihan XU, Jianing Yang, Joyce Chai, Zezhou Cheng
 </div>
 </div>
 
+# Other Projects
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">TransferWiki</div><img src='images/transferwiki.com_.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Transferwiki](https://transferwiki.com/) - Collabator
+[TransferWiki](https://transferwiki.com/) - Collaborator
 
 TransferWiki is a platform created to assist students from mainland China who are planning to transfer to universities abroad, particularly in the United States, Canada, and the United Kingdom. This platform addresses the challenges and information asymmetry faced by students during the transfer process.
   
@@ -100,4 +167,3 @@ TransferWiki is a platform created to assist students from mainland China who ar
 <div style="display: none;">
 <a href="https://clustrmaps.com/site/1c3xy"  title="ClustrMaps"><img src="//www.clustrmaps.com/map_v2.png?d=KGoDhh2MGlq2_aRXVHwc96dxN6LKB_mtZnT3ozSASwQ&cl=ffffff" /></a>
 </div>
-

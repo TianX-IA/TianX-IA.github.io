@@ -88,6 +88,10 @@
 }
 
 $scroll_offset : 2em;
+h1, .anchor {
+    scroll-margin-top: 4rem;
+}
+
 h1:before, .anchor:before { 
     content: ''; 
     display: block; 

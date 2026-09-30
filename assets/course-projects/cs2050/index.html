@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Gray-Scott Reaction-Diffusion | Tian Xia</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<nav aria-label="Back to homepage"><a href="../../../#course-projects">Back to Tian Xia's homepage</a></nav>
+<h1 id="gray-scott-reaction-diffusion">Gray-Scott
+Reaction-Diffusion</h1>
+<p><em>CS 2050 Final Project — Tian Xia — May 2026</em></p>
+<figure>
+<img src="hero_pattern.png" alt="Gray-Scott pattern, N=256, T=5000" />
+<figcaption aria-hidden="true">Gray-Scott pattern, N=256,
+T=5000</figcaption>
+</figure>
+<h2 id="introduction">1. Introduction</h2>
+<p>The picture above is the steady-state output of a two-equation system
+called the Gray-Scott reaction-diffusion model. Two chemical species U
+and V diffuse around a 2D grid; meanwhile V consumes U to produce more
+V, and V also decays at a fixed rate. From those simple rules plus a
+tiny initial seed, you get patterns that look uncannily biological —
+spots, stripes, mazes, or coral, depending on the feed rate F and kill
+rate k. They’re examples of the morphogenesis patterns Alan Turing
+predicted in his 1952 paper.</p>
+<p>I picked Gray-Scott because it hits a sweet spot for parallel
+computing. The kernel is a 5-point stencil — every cell only looks at
+its four neighbors — so parallelization is clean across OpenMP, MPI,
+CUDA, and NumPy. The dynamics are deterministic given the same initial
+state, so I can compare implementations byte-for-byte. And when I get
+something wrong, the picture comes out broken in a visually obvious
+way.</p>
+<p>This report covers five implementations — serial C++, OpenMP, MPI,
+CUDA, and <code>mpi4py</code> — sharing the same algorithm, parameters,
+and per-cell initial noise. The hero image is the serial U field at
+N=256, T=5000, in the “coral” regime (F = 0.060, k = 0.062). All numbers
+come from the CS-2050 Slurm cluster: Intel Xeon Cascadelake CPU nodes
+and NVIDIA L4 GPU nodes.</p>
+<h2 id="the-algorithm">2. The Algorithm</h2>
+<p>The Gray-Scott PDEs are:</p>
+<pre><code>∂U/∂t = D_u · ∇²U  -  U·V²  +  F·(1 - U)
+∂V/∂t = D_v · ∇²V  +  U·V²  -  (F + k)·V</code></pre>
+<p>I solve them on a uniform N × N grid with periodic boundary
+conditions, forward Euler in time, standard 5-point Laplacian in space,
+with Δx = Δt = 1. Constants throughout: D_u = 0.16, D_v = 0.08, F =
+0.060, k = 0.062. Storage is float32.</p>
+<p>Forward Euler is conditionally stable; the relevant ratio D_u · Δt /
+Δx² = 0.16 is comfortably under the standard 0.25 limit. The initial
+condition is U = 1 everywhere except a 20×20 central square where U =
+0.5, and V = 0 everywhere except the same square where V = 0.25, plus
+deterministic noise of magnitude 0.005 per cell to break symmetry. The
+noise comes from a hand-rolled MT19937 with seed 42, byte-identical
+between C++ and Python (§3.5).</p>
+<p>I run a fixed number of time-steps and never check for convergence —
+convergence-based stopping criteria add timing variance I don’t want
+when benchmarking.</p>
+<h2 id="methods">3. Methods</h2>
+<p>All five implementations share the same building blocks: two buffers
+per field with ping-pong each step; a portable MT19937 noise generator
+(raw integer output divided by 2^24, scaled to ±0.005 — I avoid
+<code>std::uniform_real_distribution</code> because it differs across
+<code>libc++</code> and <code>libstdc++</code>); the binary I/O format
+<code>[int32 N][float U[N²]][float V[N²]]</code>; and a CSV row tag
+<code>CSV,impl,N,T,P,trial,seconds,ups</code> for grep-friendly slurm
+logs.</p>
+<p>Cross-implementation correctness is enforced by a
+<code>--check &lt;ref_path&gt;</code> flag on every non-serial binary:
+it runs the canonical N=128, T=1000 problem, compares its output to the
+serial reference file, and prints <code>OK</code> or <code>FAIL</code>.
+The serial binary writes the reference with
+<code>--write-reference</code>. This gate runs inside every
+<code>submit.slurm</code>.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Implementation</th>
+<th>LOC</th>
+<th>Build</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>serial/src/grayscott_serial.cpp</code></td>
+<td>189</td>
+<td>CMake, <code>g++ -O3 -march=native</code></td>
+</tr>
+<tr>
+<td><code>openmp/src/grayscott_openmp.cpp</code></td>
+<td>176</td>
+<td>CMake, <code>g++ -O3 -march=native -fopenmp</code></td>
+</tr>
+<tr>
+<td><code>mpi/src/grayscott_mpi.cpp</code></td>
+<td>278</td>
+<td>direct <code>mpic++ -O3 -march=native</code></td>
+</tr>
+<tr>
+<td><code>cuda/src/grayscott_cuda.cu</code></td>
+<td>215</td>
+<td>direct <code>nvcc -O3</code></td>
+</tr>
+<tr>
+<td><code>additional/src/grayscott_mpi4py.py</code></td>
+<td>267</td>
+<td>none (Python)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="serial-implementation">3.1 Serial implementation</h3>
+<p>The serial code is the reference and the baseline against which every
+other implementation’s speedup is measured. The inner loop is a textbook
+5-point stencil with periodic neighbors written as
+<code>(j-1+N)%N</code> and <code>(j+1)%N</code>. Buffers ping-pong with
+<code>std::swap</code> after each step. Timing wraps only the time-step
+loop (allocation, init, and file I/O are excluded) using
+<code>std::chrono::steady_clock</code>.</p>
+<h3 id="openmp-implementation">3.2 OpenMP implementation</h3>
+<p>OpenMP differs from serial by exactly one line:
+<code>#pragma omp parallel for collapse(2) schedule(static)</code> over
+the inner <code>(i, j)</code> loop. <code>collapse(2)</code> flattens
+the two nested loops so the runtime has more chunks to hand out;
+<code>schedule(static)</code> is correct because every cell does
+identical work, so there is no load imbalance to schedule around
+dynamically. Performance is evaluated across thread counts P ∈ {1, 2, 4,
+8, 16} on one exclusive node — see §4.2 for the strong-scaling
+curve.</p>
+<h3 id="mpi-implementation">3.3 MPI implementation</h3>
+<p>I use 1D row decomposition: rank <code>r</code> owns
+<code>local_rows = N/P</code> consecutive rows in a
+<code>(local_rows + 2) × N</code> array, where the two extra rows are
+halos owned by neighbor ranks. Each step does (1) halo exchange — two
+<code>MPI_Sendrecv</code> per field with <code>up = (rank-1+P)%P</code>
+and <code>down = (rank+1)%P</code>, so 4 <code>Sendrecv</code> per step
+total; the <code>+P)%P</code> makes the topology periodic. (2) Stencil
+sweep on rows 1..<code>local_rows</code> using the just-exchanged halos
+for top/bottom. (3) Local left/right wrap — every rank still owns the
+full N columns, so the periodic wrap on the column axis is computed
+locally with <code>(j±1+N)%N</code>, not via MPI. This is an easy spot
+for a subtle bug, so I tested it explicitly: <code>--check</code> at P =
+1 exercises only the left/right wrap (no halo exchange happens), and
+<code>--check</code> at P ≥ 2 exercises both.</p>
+<p><strong>Communication strategy choices.</strong> I picked 1D row
+decomposition over 2D because for a 5-point stencil 1D has two face
+neighbors per rank instead of four (no diagonals are needed), halving
+the per-step <code>Sendrecv</code> count and simplifying the
+periodic-wrap bookkeeping; for the rank counts (≤ 16) and grid sizes (N
+≤ 1024) here, 2D’s better surface-to-volume ratio doesn’t pay off yet. I
+picked blocking <code>MPI_Sendrecv</code> over
+<code>Isend/Irecv + Wait</code> because compute-per-step is small
+relative to inter-rank latency, so the overlap window is too short to
+recover the extra code complexity — a choice validated by the very flat
+weak-scaling curve in §4.3.</p>
+<h3 id="cuda-implementation">3.4 CUDA implementation</h3>
+<p>CUDA launches one thread per cell from a 16×16 thread block. The
+kernel is a naïve global-memory stencil — no shared-memory tiling.
+Periodic BC uses the same modulo arithmetic as the CPU code. Two device
+buffer pairs are allocated once; the time loop launches the kernel T
+times and ping-pongs device pointers (no host-device transfers in the
+timed loop). Timing uses
+<code>cudaEventRecord</code>/<code>cudaEventElapsedTime</code> so I
+measure kernel time only; a warm-up launch absorbs driver/JIT
+overhead.</p>
+<h3 id="additional-implementation-mpi4py">3.5 Additional implementation:
+mpi4py</h3>
+<p>The mpi4py code mirrors the C++ MPI structure exactly: same row
+decomposition, same blocking <code>comm.Sendrecv</code> halo exchange,
+same local left/right wrap. The stencil is one vectorized NumPy
+expression using <code>np.roll(axis=1)</code> for the wrap. The halo
+exchange uses <strong>capitalized</strong> <code>comm.Sendrecv</code>
+(buffer-protocol API), not the lowercase <code>sendrecv</code>, because
+the lowercase version pickles the array and is ~100× slower — a real
+performance pitfall in mpi4py.</p>
+<p>The trickier piece is the noise. NumPy’s
+<code>np.random.MT19937(42)</code> does <strong>not</strong> match C++’s
+<code>std::mt19937(42)</code> — NumPy uses a <code>SeedSequence</code>,
+C++ initializes from the seed directly. To get byte-equivalent initial
+conditions, I reimplemented MT19937 in 24 lines of Python that match the
+C++ recurrence; the first 8 raw outputs match digit-for-digit. A
+<code>--trials N</code> flag runs the timed loop N times in one Python
+process, amortizing the ~30-second Python+NumPy+mpi4py startup over
+multiple data points.</p>
+<p>Comparing mpi4py to the C++ MPI version directly: on performance,
+mpi4py reaches 6.0 × 10⁸ cell-updates/s at P = 16 (N=512), in the same
+range as C++ MPI’s 5.4 × 10⁸ at the same P (N=1024). On ease of
+development, the LOC counts are very close (mpi4py 267, C++ MPI 278) —
+the explicit MT19937 reimplementation in Python eats most of what NumPy
+saves on the stencil — but the iteration loop is much faster in Python
+(no recompile) and the mental model is identical. On abstraction level,
+NumPy’s slicing and <code>np.roll</code> lift the stencil from
+cell-by-cell loops to whole-grid expressions, but the MPI calls stay at
+the same level (explicit ranks, explicit <code>Sendrecv</code>) — so the
+abstraction win is local to the stencil, not the communication.</p>
+<h2 id="results">4. Results</h2>
+<h3 id="correctness">4.1 Correctness</h3>
+<p>All five implementations pass <code>--check</code> against the
+canonical N=128, T=1000 serial reference:</p>
+<table>
+<thead>
+<tr>
+<th>Implementation</th>
+<th>max abs err (U)</th>
+<th>max abs err (V)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>serial (self-check)</td>
+<td>0.000e+00</td>
+<td>0.000e+00</td>
+</tr>
+<tr>
+<td>openmp (16 threads)</td>
+<td><strong>0.000e+00</strong></td>
+<td><strong>0.000e+00</strong></td>
+</tr>
+<tr>
+<td>mpi (4 ranks)</td>
+<td><strong>0.000e+00</strong></td>
+<td><strong>0.000e+00</strong></td>
+</tr>
+<tr>
+<td>cuda (1 GPU)</td>
+<td>1.192e-06</td>
+<td>1.013e-06</td>
+</tr>
+<tr>
+<td>mpi4py (4 ranks)</td>
+<td>7.749e-07</td>
+<td>7.153e-07</td>
+</tr>
+</tbody>
+</table>
+<p>OpenMP and MPI are independent parallel implementations
+(shared-memory threads vs distributed-memory ranks), but both produce
+numerical output identical to serial down to the bit. That’s because
+Gray-Scott has no reductions in the time-step — every cell update is
+element-wise — so different parallelization strategies don’t reorder any
+FP operation. CUDA and mpi4py drift by ~1e-6 (well under my 1e-5
+tolerance) from small differences in float reduction order inside the
+GPU’s register file or NumPy’s vectorized add.</p>
+<p>Figure 1 shows the U field from each implementation after the demo
+run (N=256, T=5000) — all five panels are visually
+indistinguishable.</p>
+<figure>
+<img src="correctness_grid.png"
+alt="Figure 1: U field from each implementation" />
+<figcaption aria-hidden="true">Figure 1: U field from each
+implementation</figcaption>
+</figure>
+<h3 id="strong-scaling">4.2 Strong scaling</h3>
+<p>Figure 2 shows speedup <code>T(1)/T(P)</code> vs the number of
+threads or ranks <code>P</code>. All three CPU implementations are
+evaluated at P ∈ {1, 2, 4, 8, 16}: OpenMP on one exclusive node at N =
+1024, MPI at N = 1024, and mpi4py at N = 512, with MPI and mpi4py using
+OpenMPI’s shared-memory transport for the halo exchange.</p>
+<figure>
+<img src="strong_scaling.png" alt="Figure 2: Strong scaling" />
+<figcaption aria-hidden="true">Figure 2: Strong scaling</figcaption>
+</figure>
+<p>OpenMP gets an 11.3× speedup at 16 threads (71% efficiency). MPI gets
+<strong>11.45× at 16 ranks (72%)</strong> — essentially identical to
+OpenMP at the same node, even though one is shared-memory threads and
+the other is distributed-memory ranks. mpi4py gets 7.4× at 16 ranks
+(46%). 71% efficiency is respectable for a memory-touching stencil
+kernel. The mpi4py drop comes from per-step Python overhead being a
+bigger fraction of work as P grows.</p>
+<h3 id="weak-scaling">4.3 Weak scaling</h3>
+<p>Figure 3 shows parallel efficiency for a weak sweep where work per
+rank is held constant by scaling the problem size with
+<code>N(P) = ⌊512·√P⌋</code> for OpenMP and MPI, and
+<code>⌊256·√P⌋</code> for mpi4py. Perfect weak scaling would be a flat
+line at 1.0.</p>
+<figure>
+<img src="weak_scaling.png" alt="Figure 3: Weak scaling efficiency" />
+<figcaption aria-hidden="true">Figure 3: Weak scaling
+efficiency</figcaption>
+</figure>
+<p>OpenMP and MPI behave nearly identically: a single drop at P = 1 → 2
+(~73% MPI, ~72% OpenMP), then flat from there on (still ~71% at P = 16
+for both). The drop is the one-time cost of switching from a serial code
+path to multi-rank coordination. The flat plateau is <em>not</em>
+because surface-to-volume is constant — with 1D row decomp and N(P) =
+⌊512·√P⌋, per-rank halo grows like O(√P) while per-rank compute stays
+constant, so the ratio actually creeps up. The reason the curve looks
+flat is that at our rank counts the absolute communication cost stays
+small compared to the per-step compute. At much larger P this plateau
+would eventually bend down. mpi4py drops more sharply (~37% at P = 16)
+because Python’s per-step overhead grows with rank count.</p>
+<h3 id="gpu-throughput-vs-problem-size">4.4 GPU throughput vs problem
+size</h3>
+<p>CUDA runs on a single L4 GPU, so the strong-scaling sweep above
+doesn’t apply — there’s only one device. To characterize the GPU
+implementation I vary the problem size instead, sweeping
+<code>N ∈ {512, 1024, 2048, 4096}</code> at T = 2000.</p>
+<figure>
+<img src="cuda_throughput.png"
+alt="Figure 4: CUDA naive kernel throughput" />
+<figcaption aria-hidden="true">Figure 4: CUDA naive kernel
+throughput</figcaption>
+</figure>
+<p>Throughput is high at small N (5.2 × 10¹⁰ ups at N=512, peaking at
+6.2 × 10¹⁰ at N=1024) and drops sharply to a plateau near 1.5 × 10¹⁰ ups
+for <code>N ≥ 2048</code>. The high small-N regime is the cache story:
+at small N the grid fits in the GPU’s L1/L2 with near-perfect cache
+reuse for neighbor reads. At large N the neighbors increasingly come
+from DRAM, and HBM bandwidth becomes the bottleneck.</p>
+<h3 id="cross-implementation-throughput">4.5 Cross-implementation
+throughput</h3>
+<p>Figure 5 shows the best throughput each implementation achieves on a
+log scale.</p>
+<figure>
+<img src="cross_impl.png"
+alt="Figure 5: Cross-implementation throughput" />
+<figcaption aria-hidden="true">Figure 5: Cross-implementation
+throughput</figcaption>
+</figure>
+<p>Serial peaks at 1.23 × 10⁸ ups (N = 2048, T = 200). The CPU-parallel
+implementations cluster at 4–6 × 10⁸ ups at P = 16: OpenMP at 4.4 × 10⁸
+(N=1024), MPI at 5.4 × 10⁸ (N=1024), and mpi4py at 6.0 × 10⁸ (N=512).
+Notably mpi4py matches the C++ MPI throughput — NumPy’s vectorized
+stencil is genuinely competitive at small problem sizes. CUDA dwarfs
+everything: <strong>1.52 × 10¹⁰ ups at N = 4096 on a single L4 GPU —
+123× the serial baseline</strong> in the DRAM-bound regime, and 6.2 ×
+10¹⁰ at N = 1024 in the cache-fed regime.</p>
+<h2 id="profiling">5. Profiling</h2>
+<p>I ran Intel VTune’s <code>hpc-performance</code> analysis on the
+OpenMP binary at N = 1024, T = 5000, 16 threads on the Cascadelake
+compute node. Going in, my expectation was that Gray-Scott would be
+memory-bound: each cell-update is ≈ 12 reads + 2 writes = 56 bytes for ≈
+28 floating-point ops, so algorithmic intensity is ≈ 0.5 FLOP/byte, well
+below the ~1 FLOP/byte threshold where modern CPUs become DRAM-limited.
+What VTune actually said:</p>
+<table>
+<thead>
+<tr>
+<th>VTune metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Elapsed Time</td>
+<td>49.35 s</td>
+</tr>
+<tr>
+<td>SP GFLOPS achieved</td>
+<td><strong>2.48</strong></td>
+</tr>
+<tr>
+<td><strong>Memory Bound</strong></td>
+<td><strong>3.7%</strong> of pipeline slots — NOT memory-bound</td>
+</tr>
+<tr>
+<td><strong>DRAM Bound</strong></td>
+<td><strong>0.0%</strong> of clockticks</td>
+</tr>
+<tr>
+<td><strong>Vectorization (Packed FP)</strong></td>
+<td><strong>0.0%</strong> — NO SIMD vectorization</td>
+</tr>
+<tr>
+<td>SP FLOPs (Scalar)</td>
+<td>100.0%</td>
+</tr>
+<tr>
+<td>CPI Rate</td>
+<td>16.4 (very high)</td>
+</tr>
+<tr>
+<td>Effective Physical Core Util</td>
+<td>62.3% (≈15 of 24 cores)</td>
+</tr>
+<tr>
+<td>Top hotspot</td>
+<td>step kernel, 736 s CPU time</td>
+</tr>
+</tbody>
+</table>
+<p>The two numbers that jump out are <strong>0% packed FP</strong> and
+<strong>CPI = 16.4</strong>. Despite <code>-O3 -march=native</code>, GCC
+didn’t auto-vectorize the stencil loop — every floating-point op is
+scalar. The likely culprit is the periodic-BC modulo arithmetic
+(<code>(j-1+N) % N</code>, <code>(j+1) % N</code>): it creates index
+expressions the auto-vectorizer can’t safely widen to a SIMD lane, and
+the integer modulo itself is long-latency (20–40 cycles on Cascadelake).
+Together that explains both the missing vectorization and the high CPI.
+Memory bandwidth is essentially untouched because the loop produces
+results so slowly that DRAM is never close to saturated.</p>
+<p>The kernel is achieving 2.48 GFLOPS at 16 threads. Cascadelake’s
+16-core AVX-512 peak is around 800 GFLOPS, so we’re at about
+<strong>0.3% of peak compute</strong> — an order of magnitude below the
+memory-bound roofline ceiling. To approach that ceiling, the
+implementation would need separate interior and boundary loops so the
+modulo only appears on the rim; the bulk loop would then auto-vectorize
+and pick up ~16× from AVX-512, after which DRAM bandwidth becomes the
+next bottleneck.</p>
+<p>For the GPU, with 28 FLOPs per cell-update and 1.52 × 10¹⁰ ups at N =
+4096, the kernel hits ~430 SP GFLOPS — about 1.8% of the L4’s 24 SP
+TFLOP peak. Counting every neighbor read at face value (56 bytes/cell),
+the <em>logical</em> memory load bandwidth is 56 B × 1.52 × 10¹⁰ ≈ 850
+GB/s, well above the L4’s 300 GB/s HBM peak — which is only possible
+because L1/L2 catch most of the redundant neighbor reads, so actual DRAM
+traffic is much less than the logical figure. The plateau in Figure 4 is
+the regime where this cache mediation tops out: at large N the working
+set spills past cache, more reads fall through to HBM, and DRAM
+bandwidth becomes the binding ceiling.</p>
+<h2 id="discussion">6. Discussion</h2>
+<p>Two patterns from the data deserve a closer look.</p>
+<p><strong>OpenMP and MPI converge on shared memory.</strong> At P = 16
+my single-node MPI benchmark hits 11.45× speedup vs OpenMP’s 11.30× —
+essentially equal, even though one is shared-memory threads and the
+other is distributed-memory ranks. The intuition that “MPI is heavier
+than OpenMP” is more about communication topology than fundamentals: in
+the single-node case, OpenMPI uses shared-memory transport so both
+implementations end up touching the same memory pages. The interesting
+follow-up question is multi-node, where MPI’s halo-exchange latency
+becomes a real cost OpenMP doesn’t pay.</p>
+<p><strong>Productivity vs performance is not as sharp a tradeoff as I
+expected.</strong> mpi4py with NumPy slice arithmetic stays competitive
+with C++ MPI through P = 16 (within ~10% throughput at the same rank
+count). The LOC counts are essentially the same (267 vs 278), but the
+Python iteration loop is much faster — no recompile — so for
+stencil-style code on shared memory you can get most of C++’s
+performance with a faster development cycle. The break-even is reached
+when per-step Python dispatch stops being negligible — i.e., very small
+problems or very high rank counts.</p>
+<h2 id="conclusion">7. Conclusion</h2>
+<p>Five implementations of Gray-Scott produce visually identical
+patterns spanning 1.23 × 10⁸ cell-updates/s on a single Cascadelake core
+to 1.5 × 10¹⁰ on one L4 GPU in the DRAM-bound regime (and over 6 × 10¹⁰
+when the grid fits in GPU caches). The three CPU-parallel
+implementations land in a tight band at P = 16 — OpenMP and MPI both at
+~11.4× speedup with 71–72% efficiency, mpi4py at 7.4× with 46% — and
+behave identically on shared memory once you account for the OpenMPI
+shared-memory transport. The biggest finding from VTune profiling is
+that the OpenMP implementation runs at 0.3% of the CPU’s vector peak
+because the periodic boundary’s modulo arithmetic prevented
+auto-vectorization. The bottleneck is scalar arithmetic and a very high
+CPI, not memory bandwidth — opposite of the textbook
+“low-arithmetic-intensity stencil is memory-bound” expectation.
+Restructuring the boundary handling is the obvious next step; multi-GPU
+CUDA, 3-D Gray-Scott, and adaptive mesh refinement live further out on
+the same continuum.</p>
+</body>
+</html>
