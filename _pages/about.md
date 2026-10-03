@@ -26,9 +26,9 @@ My research lies at the intersection of *computer vision*, *multimodal learning*
 
 My current interests include:
 
-- *Visual and spatial understanding*: Learning representations of geometry, semantics, and motion from images and videos to understand dynamic 3D environments.
-- *Generative modeling*: Exploring video and multimodal generation, with an emphasis on spatiotemporal consistency and the use of synthetic data for visual learning.
-- *Multimodal and self-evolving agents*: Connecting grounded reasoning with interaction, and studying how agents adapt and improve through experience.
+- *Visual and spatial understanding*: Geometry, semantics, and motion in dynamic 3D scenes.
+- *Generative modeling*: Consistent video generation and cross-modal synthesis.
+- *Multimodal and self-evolving agents*: Grounded reasoning, interaction, and learning from experience.
 
 # Publications 
 
