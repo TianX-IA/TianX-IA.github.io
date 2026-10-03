@@ -32,6 +32,17 @@ More recently, I have been studying how optimization objectives and evaluation c
 
 # Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2026 (Spotlight)</div><img src='images/mose3-method.png' alt="MoSE3 method for predicting dense world-space SE(3) motion from monocular video" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[MoSE3: Learning World-Space SE(3) at Every Pixel](https://mose3-tracker.github.io/)
+
+Jiahuan Cheng\*, Zhiyi Li\*, **Tian Xia**\*, Ruojin Cai, Yilun Du, Qianqian Wang
+
+\[[**Project**](https://mose3-tracker.github.io/)\]\[[**Paper**](https://mose3-tracker.github.io/paper.pdf)\]
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2026</div><img src='images/ranking-pe.png' alt="Ranking-PE overview of multimodal clinical diagnosis and ranking-aware evaluation" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
