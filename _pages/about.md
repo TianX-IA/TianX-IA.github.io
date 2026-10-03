@@ -17,18 +17,18 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi, I'm Tian Xia, a master's student in Computational Science and Engineering at Harvard University, working with Prof. [Qianqian Wang](https://qianqianwang68.github.io/). Previously, I graduated from the University of Michigan, Ann Arbor, with majors in Honors Mathematics, Honors Computer Science, and Data Science, where I worked with Prof. Joyce Chai at the [SLED Lab](https://sled.eecs.umich.edu/). Outside of research, I enjoy gaming, long walks, and exploring new cities.
+Hi, I'm Tian Xia, a master's student in CSE at Harvard University, working with Prof. [Qianqian Wang](https://qianqianwang68.github.io/). Previously, I graduated from the University of Michigan, Ann Arbor, with majors in Honors Math, Honors CS, and DS, where I worked with Prof. Joyce Chai at the [SLED Lab](https://sled.eecs.umich.edu/). Outside of research, I enjoy gaming, long walks, and exploring new cities.
 
 
 # Research
 
-My research lies at the intersection of *computer vision*, *multimodal learning*, and *embodied intelligence*. My long-term goal is to build self-evolving multimodal agents that develop a grounded understanding of the world and continually refine their reasoning and behavior through experience, with a particular interest in real-world robotics.
+My research interests focus on *3D understanding*, *generative AI*, and *embodied agents*, emphasizing scalable systems and cross-modal representations. I aim to develop machine learning systems that integrate diverse data modalities, such as vision, language, and 3D spatial information, to advance perception of 3D environments, generation of 3D worlds, and interaction in human-like ways.
 
-My current interests include:
+Over time, my interests have expanded to encompass a broader range of topics, including computer vision, 3D modeling, and robotics. My current focus areas include:
 
-- *Visual and spatial understanding*: Geometry, semantics, and motion in dynamic 3D scenes.
-- *Generative modeling*: Consistent video generation and cross-modal synthesis.
-- *Multimodal and self-evolving agents*: Grounded reasoning, interaction, and learning from experience.
+- *Vision-centric 3D understanding*: Encompassing 3D reconstruction, recognition, and generation.
+- *Generative AI*: Particularly for generating across diverse modalities and high-dimensional(3D, 4D) creation.
+- *Multimodal Representation Learning*: Integrating vision, language, and 3D spatial information.
 
 # Publications 
 
