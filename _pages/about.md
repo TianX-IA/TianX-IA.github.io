@@ -22,7 +22,7 @@ Hi, I'm Tian Xia, a master's student in CSE at Harvard University. I recently gr
 
 # Research
 
-My research lies at the intersection of *computer vision*, *multimodal learning*, and *embodied intelligence*. I am interested in how visual and spatial representations can support reasoning, generalization, and interaction. My long-term goal is to build **self-evolving multimodal agents** that develop a grounded understanding of the world and continually refine their reasoning and behavior through experience, with a particular interest in real-world robotics.
+My research lies at the intersection of *computer vision*, *multimodal learning*, and *embodied intelligence*. I am interested in how visual and spatial representations can support reasoning, generalization, and interaction. My long-term goal is to build self-evolving multimodal agents that develop a grounded understanding of the world and continually refine their reasoning and behavior through experience, with a particular interest in real-world robotics.
 
 # Publications 
 
