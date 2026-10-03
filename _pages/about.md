@@ -22,13 +22,7 @@ Hi, I'm Tian Xia, a master's student in CSE at Harvard University. I recently gr
 
 # Research
 
-My research spans *computer vision*, *generative modeling*, and *multimodal learning*. I am interested in how models represent visual and spatial structure, and how we can adapt them to new tasks with useful supervision and feedback. My work includes semantic-aware 3D reconstruction, consistent video generation, and prompt optimization for multimodal clinical tasks.
-
-More recently, I have been studying how optimization objectives and evaluation criteria shape model behavior, from ranking-aware prompt search to reflective learning in LLM agents. My current interests include:
-
-- *Visual and spatial understanding*: Connecting images, language, and 3D representations for perception and embodied systems.
-- *Generative modeling*: Improving video consistency and studying how synthetic data supports downstream visual learning.
-- *Prompt optimization and evaluation*: Designing feedback and selection objectives that reflect the capabilities we want models and agents to learn.
+My research lies at the intersection of *computer vision*, *multimodal learning*, and *embodied intelligence*. I am interested in how visual and spatial representations can support reasoning, generalization, and interaction. My long-term goal is to build **self-evolving multimodal agents** that develop a grounded understanding of the world and continually refine their reasoning and behavior through experience, with a particular interest in real-world robotics.
 
 # Publications 
 
