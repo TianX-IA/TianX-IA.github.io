@@ -32,7 +32,7 @@ More recently, I have been studying how optimization objectives and evaluation c
 
 # Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2026 (Spotlight)</div><img src='images/mose3-method.png' alt="MoSE3 method for predicting dense world-space SE(3) motion from monocular video" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2026 (Spotlight)</div><img src='images/mose3-figure1.png' alt="MoSE3 Figure 1: dense SE(3) predictions for rigid, articulated, and non-rigid motion" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [MoSE3: Learning World-Space SE(3) at Every Pixel](https://mose3-tracker.github.io/)
