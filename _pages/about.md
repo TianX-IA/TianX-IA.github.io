@@ -24,6 +24,12 @@ Hi, I'm Tian Xia, a master's student in CSE at Harvard University. I recently gr
 
 My research lies at the intersection of *computer vision*, *multimodal learning*, and *embodied intelligence*. I am interested in how visual and spatial representations can support reasoning, generalization, and interaction. My long-term goal is to build self-evolving multimodal agents that develop a grounded understanding of the world and continually refine their reasoning and behavior through experience, with a particular interest in real-world robotics.
 
+My current interests include:
+
+- *Visual and spatial understanding*: Learning representations of geometry, semantics, and motion from images and videos to understand dynamic 3D environments.
+- *Generative modeling*: Exploring video and multimodal generation, with an emphasis on spatiotemporal consistency and the use of synthetic data for visual learning.
+- *Multimodal and self-evolving agents*: Connecting grounded reasoning with interaction, and studying how agents adapt and improve through experience.
+
 # Publications 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2026 (Spotlight)</div><img src='images/mose3-figure1.png' alt="MoSE3 Figure 1: dense SE(3) predictions for rigid, articulated, and non-rigid motion" width="100%" loading="lazy"></div></div>
