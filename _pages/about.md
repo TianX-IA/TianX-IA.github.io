@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi, I'm Tian Xia, a master's student in CSE at Harvard University, working with Prof. [Qianqian Wang](https://qianqianwang68.github.io/). Previously, I graduated from the University of Michigan, Ann Arbor, with majors in Honors Math, Honors CS, and DS, where I worked with Prof. Joyce Chai at the [SLED Lab](https://sled.eecs.umich.edu/). Outside of research, I enjoy gaming, long walks, and exploring new cities.
+Hi, I'm Tian Xia, a master's student in CSE at Harvard University, working with Prof. [Qianqian Wang](https://qianqianwang68.github.io/). Previously, I graduated from the University of Michigan, Ann Arbor, with majors in Honors Math, Honors CS, and DS, where I worked with Prof. [Joyce Chai](https://web.eecs.umich.edu/~chaijy/) at the [SLED Lab](https://sled.eecs.umich.edu/). Outside of research, I enjoy gaming, long walks, and exploring new cities.
 
 
 # Research
