@@ -39,7 +39,7 @@ Over time, my interests have expanded to encompass a broader range of topics, in
 
 Jiahuan Cheng\*, Zhiyi Li\*, **Tian Xia**\*, Ruojin Cai, Yilun Du, Qianqian Wang
 
-\[[**Project**](https://mose3-tracker.github.io/)\]\[[**Paper**](https://mose3-tracker.github.io/paper.pdf)\]
+\[[**Project**](https://mose3-tracker.github.io/)\]\[[**Arxiv**](https://arxiv.org/abs/2610.03716)\]\[[**Paper**](https://arxiv.org/pdf/2610.03716)\]
 </div>
 </div>
 
