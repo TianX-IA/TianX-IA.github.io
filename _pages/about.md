@@ -68,11 +68,11 @@ Xuweiyi Chen\*, **Tian Xia**\*, Sihan XU, Jianing Yang, Joyce Chai, Zezhou Cheng
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">TMLR 2024</div><img src='images/UniCtrl.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
-[UniCtrl: Improving the Spatiotemporal Consistency of Text-to-Video Diffusion Models via Training-Free Unified Attention Control](https://openreview.net/forum?id=x2uFJ79OjK)
+[UniCtrl: Improving the Spatiotemporal Consistency of Text-to-Video Diffusion Models via Training-Free Unified Attention Control](https://unified-attention-control.github.io/)
 
 **Tian Xia**\*, Xuweiyi Chen\*, Sihan Xu
 
-\[[**Project**](https://unified-attention-control.github.io/)\]\[[**Arxiv**](https://arxiv.org/abs/2403.02332)\]\[[**Code**](https://github.com/XuweiyiChen/UniCtrl)\]
+\[[**Project**](https://unified-attention-control.github.io/)\]\[[**Arxiv**](https://arxiv.org/abs/2403.02332)\]\[[**Paper**](https://openreview.net/forum?id=x2uFJ79OjK)\]\[[**Code**](https://github.com/XuweiyiChen/UniCtrl)\]
 </div>
 </div>
 
