@@ -61,7 +61,7 @@ Jiahuan Cheng\*, Zhiyi Li\*, **Tian Xia**\*, Ruojin Cai, Yilun Du, Qianqian Wang
 
 Xuweiyi Chen\*, **Tian Xia**\*, Sihan XU, Jianing Yang, Joyce Chai, Zezhou Cheng
 
-\[[**Project**](https://uva-computer-vision-lab.github.io/sab3r/)\]\[[**Arxiv**](https://www.arxiv.org/abs/2506.02112)\]\[[**Code**](https://github.com/UVA-Computer-Vision-Lab/sab-3r)\]\[[**Poster**](/assets/posters/sab3r-poster.pdf)\]
+\[[**Project**](https://uva-computer-vision-lab.github.io/sab3r/)\]\[[**Arxiv**](https://www.arxiv.org/abs/2506.02112)\]\[[**Paper**](https://arxiv.org/pdf/2506.02112)\]\[[**Code**](https://github.com/UVA-Computer-Vision-Lab/sab-3r)\]\[[**Poster**](/assets/posters/sab3r-poster.pdf)\]
 </div>
 </div>
 
@@ -72,7 +72,7 @@ Xuweiyi Chen\*, **Tian Xia**\*, Sihan XU, Jianing Yang, Joyce Chai, Zezhou Cheng
 
 **Tian Xia**\*, Xuweiyi Chen\*, Sihan Xu
 
-\[[**Project**](https://unified-attention-control.github.io/)\]\[[**Arxiv**](https://arxiv.org/abs/2403.02332)\]\[[**Paper**](https://openreview.net/forum?id=x2uFJ79OjK)\]\[[**Code**](https://github.com/XuweiyiChen/UniCtrl)\]
+\[[**Project**](https://unified-attention-control.github.io/)\]\[[**Arxiv**](https://arxiv.org/abs/2403.02332)\]\[[**Paper**](https://arxiv.org/pdf/2403.02332)\]\[[**OpenReview**](https://openreview.net/forum?id=x2uFJ79OjK)\]\[[**Code**](https://github.com/XuweiyiChen/UniCtrl)\]
 </div>
 </div>
 
